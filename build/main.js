@@ -88,6 +88,7 @@ document.body.appendChild(menu);
     listItems += `<li>item</li>`;
   })
   menu.innerHtml = listItems;
+  console.log(11);
   return menu;
 });;
 
