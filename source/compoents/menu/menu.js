@@ -3,9 +3,9 @@ export default function (array,className) {
   menu.className = className;
   var listItems = '';
   array.forEach((item) => {
-    listItems += `<li>item</li>`;
+    let li = document.createElement('li');
+    li.innerHTML  = item;
+    menu.appendChild (li);
   })
-  menu.innerHtml = listItems;
-  console.log(11);
   return menu;
 };
