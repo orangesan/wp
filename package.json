@@ -1,0 +1,9 @@
+{
+  "name": "wp2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.4.1"
+  }
+}
