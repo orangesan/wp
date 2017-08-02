@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,6 +68,10 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_scss__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__menu_scss__);
+
+
 /* harmony default export */ __webpack_exports__["a"] = (function (array,className) {
   var menu = document.createElement('ul');
   menu.className = className;
@@ -83,15 +87,33 @@
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compoents_menu_menu_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_styl__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__blog_styl__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compoents_menu_menu_js__ = __webpack_require__(0);
 
-let menu = Object(__WEBPACK_IMPORTED_MODULE_0__compoents_menu_menu_js__["a" /* default */])(['Main','About'],'menu');
+
+
+let menu = Object(__WEBPACK_IMPORTED_MODULE_1__compoents_menu_menu_js__["a" /* default */])(['Main','About'],'menu');
 document.body.appendChild(menu);
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

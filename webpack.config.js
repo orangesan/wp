@@ -5,12 +5,14 @@ const pug = require('./webpack/pug');
 const devServer = require('./webpack/devserve');
 const saas = require('./webpack/saas');
 const stylus = require('./webpack/stylus');
+const extractCSS = require('./webpack/css.extract.js');
 
 const PATHS = {
   source : path.join(__dirname,'source'),
   build: path.join(__dirname,'build')
 };
 
+console.log(PATHS);
 
 const common = merge(
   {
@@ -20,7 +22,7 @@ const common = merge(
   },
   output: {
     path: PATHS.build,
-    filename: '[name].js'
+    filename: 'js/[name].js'
   },
   plugins: [
     new htmlWebPackPlugin({
@@ -35,21 +37,25 @@ const common = merge(
     })
   ],
 },
-pug(),
-stylus()
-)
+  pug()
+);
 
 
 
 module.exports = function (env) {
   if(env === 'production') {
-    return common;
+    return merge([
+      common,
+      extractCSS()
+    ])
   }
   if(env === 'development') {
     return merge ([
       common,
       devServer(),
+      stylus(),
       saas()
+
     ])
   }
 }
